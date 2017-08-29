@@ -8,6 +8,21 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code scaffolding
 
+## Setup
+Run ng build
+In the dist folder, create manifest.json with the following contents:
+{
+  "manifest_version": 2,
+  "name": "Bus Watch",
+  "description": "Epicodus project featuring One Bus Away",
+  "version": "1.0",
+  "browser_action": {
+  "default_icon": "icon.png",
+  "default_popup": "index.html"
+},
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
+
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
 ## Build
